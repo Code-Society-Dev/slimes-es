@@ -1,0 +1,161 @@
+:root {
+    --bg-colour: #323232;
+    --info-bg-colour: #C9C9C93D;
+    --text-box-colour: #C4C4C41F;
+    --txt-colour: #FFFFFF80;
+    --title-font: Insaniburger, sans-serif;
+    --txt-font: "Futura Std", sans-serif;
+    /* scroller */
+    --scrollbarBG: #C4C4C41A;
+    --thumbBG: #C4C4C480;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    scrollbar-width: 1rem;
+    font-size: clamp(1rem, 3.5vw - 1.2rem, 1.875rem);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar-thumb,::-webkit-scrollbar-track{
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--scrollbarBG);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--bg-colour);
+    background-image: url(../assets/images/bg-pattern.svg), url(../assets/images/bg-pattern2.svg);
+    background-position: left, right;
+    background-repeat: no-repeat;
+    color: var(--txt-colour);
+    font-family: var(--title-font);
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+img {
+    max-width: 100%;
+}
+
+.welcome-section {
+    display: flex;
+    width: min(900px, 60%);
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1em;
+}
+
+.left-side{
+    flex-shrink: 1.06;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.logo-container,.info{
+    border-radius: 2em;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    background-image: linear-gradient(180deg, #9510C7 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(171.52deg, #BD14FA 6.49%, #bd14fa9b 45.15%, #bd14fa00 242.46%);
+}
+
+.info {
+    background-color: var(--info-bg-colour);
+    height: min(80vh, 500px);
+    overflow: auto;
+    padding: 0 1em;
+}
+
+.info__title {
+    font-family: var(--title-font);
+    text-align: center;
+    font-size: 4rem;
+}
+
+.info__title::after {
+    content: '.es';
+}
+
+.info__title, .info__paragraph {
+    background-color: var(--text-box-colour);
+    border-radius: 1rem;
+}
+
+.info__paragraph{
+    padding: 1em;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.button {
+    border-radius: .5em;
+    padding: .5em 3em;
+    background-color: var(--info-bg-colour);
+    color: inherit;
+    border-width: 0;
+}
+
+.button--discord {
+    background-color: #9510C7;
+}
+
+.button--group{
+    border-radius: 1em;
+    margin-top: .5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1em;
+}
+
+.button--group::before {
+    content: url(../assets/images/groups.svg);
+}
+
+.button--discord::before {
+    content: url(../assets/images/discord.svg);
+}
+
+.button--user::before {
+    content: url(../assets/images/person-icon.svg);
+}
+
+@font-face {
+    font-family: "Futura Std";
+    src: url(../assets/fonts/furura-std-4/FuturaStdBold.woff);
+}
+
+@font-face {
+    font-family: "Insaniburger";
+    src: url(../assets/fonts/insaniburger/Insanibu.ttf);
+}
