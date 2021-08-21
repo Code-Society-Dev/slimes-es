@@ -4,7 +4,7 @@ img{
 .card{
     height: initial;
     display: grid;
-    grid-template-rows: 8rem auto;
+    grid-template-rows: 5.5rem auto;
 }
 
 .card__body{

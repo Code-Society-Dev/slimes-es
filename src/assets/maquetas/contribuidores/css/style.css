@@ -5,8 +5,8 @@ img{
     height: initial;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 8rem auto;
-    grid-template-rows: 8rem auto;
+    -ms-grid-rows: 5.5rem auto;
+    grid-template-rows: 5.5rem auto;
 }
 
 .card__body{
