@@ -1,0 +1,68 @@
+:root {
+    --bg-colour: #323232;
+    --info-bg-colour: #C9C9C93D;
+    --text-box-colour: #C4C4C41F;
+    --txt-colour: #FFFFFF80;
+    --title-font: Insaniburger, sans-serif;
+    --txt-font: "Futura Std", sans-serif;
+    /* scroller */
+    --scrollbarBG: #C4C4C41A;
+    --thumbBG: #C4C4C480;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body {
+    margin: 0;
+    color: var(--txt-colour);
+    font-family: var(--txt-font);
+    background-color: var(--bg-colour);
+    background-image: url(../images/bg-pattern.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--title-font);
+}
+
+@media only screen and (min-width:990px) {
+    body {
+        background-image: url(../images/bg-pattern.svg), url(../images/bg-pattern2.svg);
+        background-position: left, right;
+    }
+}
+
+*, *::before, *::after {
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track, .card__figure {
+    border-radius: 1em;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--scrollbarBG);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+@font-face {
+    font-family: "Futura Std";
+    src: url(../fonts/furura-std-4/FuturaStdMedium.woff);
+}
+
+@font-face {
+    font-family: "Insaniburger";
+    src: url(../fonts/insaniburger/Insanibu.ttf);
+}
