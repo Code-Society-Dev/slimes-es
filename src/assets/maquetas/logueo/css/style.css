@@ -22,7 +22,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 1rem;
+    width: 1em;
 }
 
 ::-webkit-scrollbar-track {
@@ -171,26 +171,14 @@ img {
     color: #9510C7;
 }
 
-@font-face {
-    font-family: "Futura Std";
-    src: url(../../../sources/fonts/furura-std-4/FuturaStdMedium.woff);
-}
-
-@font-face {
-    font-family: "Insaniburger";
-    src: url(../../../sources/fonts/insaniburger/Insanibu.ttf);
-}
-
 @media only screen and (max-width:989px) {
     body {
         background-image: url(../../../sources/images/bg-pattern.svg);
         background-position: left;
     }
-    
     img {
         max-height: 100%;
     }
-
     .card {
         display: -ms-grid;
         display: grid;
@@ -201,11 +189,9 @@ img {
         -ms-transform: translateY(calc(-40px - -.5em));
         transform: translateY(calc(-40px - -.5em));
     }
-
     .card__info-container, .card__figure {
         border-radius: 2em;
     }
-
     .card__info-container::-webkit-scrollbar, .button--users {
         display: none;
     }
@@ -215,21 +201,27 @@ img {
     .card {
         width: min(700px, 50%);
     }
-
     .card__header {
         -ms-flex-negative: 1.04;
         flex-shrink: 1.04;
     }
-
     .card__title {
         font-size: 4rem;
     }
-
     .card__info-container {
         padding-right: 1em;
     }
-
     .button--user {
         margin-right: 2rem;
     }
+}
+
+@font-face {
+    font-family: "Futura Std";
+    src: url(../../../sources/fonts/furura-std-4/FuturaStdMedium.woff);
+}
+
+@font-face {
+    font-family: "Insaniburger";
+    src: url(../../../sources/fonts/insaniburger/Insanibu.ttf);
 }
