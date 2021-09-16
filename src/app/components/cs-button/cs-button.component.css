@@ -1,8 +1,8 @@
-.button--discord {
+.button--primary {
   background-color: #9510C7;
 }
 
-.button--user {
+.button--secundary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

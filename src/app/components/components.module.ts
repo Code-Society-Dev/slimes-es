@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { CsBannerComponent } from './cs-banner/cs-banner.component';
 import { CsButtonComponent } from './cs-button/cs-button.component';
 import {
-  CsLandingCardComponent,
+  CsLandingCardComponent
 } from './cs-landing-card/cs-landing-card.component';
 
 @NgModule({

@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cs-landing-card.component.html',
   styleUrls: ['./cs-landing-card.component.css']
 })
+
 export class CsLandingCardComponent implements OnInit {
 
   constructor() { }
