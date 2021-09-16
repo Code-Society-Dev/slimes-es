@@ -1,0 +1,32 @@
+img{
+    max-height: 100%;
+}
+.card{
+    height: initial;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 5.5rem auto;
+    grid-template-rows: 5.5rem auto;
+}
+
+.card__body{
+    overflow-y: auto;
+    height: min(45vh, 400px);
+}
+
+.card__info-container{
+    border-radius: .5em 3em 3em .5em / .5em 9em 9em .5em;
+}
+
+.card__title{
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width:989px){
+    .card{
+        width: min(80%,250px);
+    }
+    .card__info-container{
+        border-radius: 2em;
+    }
+}
