@@ -15,7 +15,6 @@ export class CsButtonComponent implements OnInit {
 
   @Input() icon: string;
   @Input() classBtn: string;
-
   @Output() onClick: EventEmitter<any>;
 
   constructor() {
@@ -30,5 +29,4 @@ export class CsButtonComponent implements OnInit {
   clickBtn() {
     this.onClick.emit();
   }
-
 }

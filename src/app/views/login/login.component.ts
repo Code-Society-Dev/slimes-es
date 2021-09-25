@@ -15,12 +15,4 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  iniciarSesion() {
-    alert('iniciarSesion');
-  }
-
-  checkUSer() {
-    alert('checkUSer');
-  }
-
 }

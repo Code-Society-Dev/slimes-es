@@ -1,4 +1,8 @@
-.button--primary {
+.button{
+  cursor: pointer;
+}
+
+/* .button--primary {
   background-color: #9510C7;
 }
 
@@ -14,4 +18,4 @@
   justify-content: space-evenly;
   width: 100%;
   margin-top: .5em;
-}
+} */
