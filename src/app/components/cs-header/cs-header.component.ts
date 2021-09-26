@@ -7,11 +7,11 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'cs-button',
-  templateUrl: './cs-button.component.html',
-  styleUrls: ['./cs-button.component.css']
+  selector: 'cs-header',
+  templateUrl: './cs-header.component.html',
+  styleUrls: ['./cs-header.component.css']
 })
-export class CsButtonComponent implements OnInit {
+export class CsHeaderComponent implements OnInit {
 
   @Input() icon: string;
   @Input() classBtn: string;
